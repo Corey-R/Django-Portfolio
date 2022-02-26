@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Corey's Portfolio{% endblock %}
+
+
+{% block content %}
+<body>
+     <video autoplay muted loop id="Typing_Video">
+        <source src="{% static 'images/video/Typing.mp4' %}" type="video/mp4">
+        <!-- Display message if video fails to run -->
+        Your browser does not support HTML5 video.
+    </video>
+     <div class="Video_Text">
+            <h1 class="white-text">Corey's Portfolio</h1>
+            <strong>
+                <div class="quotes">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        No playwright, no stage director, no emperor, however powerful, has ever exercised such
+                        absolute authority to arrange a stage or
+                        field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <p class="center">
+                        <br> -Joseph Weizenbaum<br>
+                        <br>
+                    </p>
+                </div>
+                <div class="home-paragraphs">
+                    <p>
+                        My name is Corey. Welcome to my portfolio website. Here, I will give you a brief introduction of
+                        my background and share some of my favorite projects. If you'd like to contact me, feel free to use
+                        the contact button on the lower right of the screen or in the navbar.
+                        <br>
+                        <br>Thank you for stopping by and enjoy!
+                    </p>
+                </div>
+            </strong>
+        </div>
+ </body>
+{% endblock %}

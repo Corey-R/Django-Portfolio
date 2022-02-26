@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+{% block content %}
+        <h1 class="white-text">About</h1>
+{% block slideshow %}
+ <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/img_1.jpg' %}" alt="Picture of myself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/HTML_CSS_and_JavaScript.jpeg' %}" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/Python.png' %} " alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/C_Sharp_and_Dot_NET.png' %}" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/SQL_and_Database.jpg' %}" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="{% static 'images/img_2.png' %}" alt="Email">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+<!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="{% static 'images/images.jpg' %}" alt="coding photo">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <p>
+                    I am a low vision software developer who loves to code! When I'm not enjoying the thrill of the
+                    build, I enjoy singing with my family and exercising/physical activity.
+                    <br>
+                    <br>I am a graduate of
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a>
+                    Software Developer Boot Camp; trained and experienced in the following web and programming
+                    languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+
+                </p>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title %}Projects{% endblock %}
+{% block content %}
+    <h1 class="white-text">Projects</h1>
+<div class="projects-container">
+    <p>
+        Over the past 6 months, I've developed my knowledge and skills in various languages by creating various
+        projects. Below you'll find a few of my favorite projects created and access to my Github repository where
+        you can view more.
+    </p>
+
+    <!-- Favorite Projects -->
+    <h3 class="project-subheading">HTML & CSS Using Bootstrap</h3>
+    <div class="image-container">
+        <img class="img-style" src="{% static 'images/bootstrap-site1.png' %}" alt="bootstrap 1">
+        <img class="img-style" src="{% static 'images/bootstrap-site2.png' %}" alt="bootstrap 1">
+        <img class="img-style" src="{% static 'images/bootstrap-site3.png' %}" alt="bootstrap 1">
+    </div>
+    <h3 class="project-subheading">Tic Tac Toe Using Javascript</h3>
+    <video controls style="width: 600px; height: 450px;">
+        <source src="{% static 'images/video/XandOs.mp4' %}" type="video/mp4">
+        <!-- Display message if video fails to run -->
+        Your browser does not support HTML5 video.
+    </video>
+    <h3 class="project-subheading">Python CRUDt</h3>
+    <video autoplay muted loop style="width: 600px; height: 450px;">
+        <source src="{% static 'images/video/python-live.mp4' %}" type="video/mp4">
+        <!-- Display message if video fails to run -->
+        Your browser does not support HTML5 video.
+    </video>
+    <h3 class="project-subheading">C# and .NET CRUD (Scaffolding) + Added Sorting Feature</h3>
+    <video autoplay muted loop style="width: 600px; height: 450px;">
+        <source src="{% static 'images/video/csharp-live.mp4' %}" type="video/mp4">
+        <!-- Display message if video fails to run -->
+        Your browser does not support HTML5 video.
+    </video>
+    <h3 class="project-subheading">You can find the code base to these projects and other projects I created at the
+        Github link provided below:</h3>
+</div>
+
+    <!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <div class="center">
+                        <a href="https://github.com/Corey-R?tab=repositories" target="_blank">My Github Repository</a>
+                    </div>
+					<br>I am a full-stack developer and would love to work with you on your project.
+                    <a onclick="openForm()">Contact</a> me below!
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/Corey-R?tab=repositories" target="_blank">
+                    <img src="{% static 'images/GitHub.png' %}"></a>
+            </div>
+        </div>
+{% endblock %}
